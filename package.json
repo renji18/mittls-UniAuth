@@ -1,0 +1,31 @@
+{
+  "name": "@mittls/uniauth",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "keywords": [
+    "authentication",
+    "JWT",
+    "OAuth",
+    "middleware"
+  ],
+  "author": "renji18",
+  "license": "ISC",
+  "description": "A simple and modern take on authentication.",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  }
+}
